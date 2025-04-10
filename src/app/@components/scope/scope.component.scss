@@ -1,0 +1,73 @@
+.scope_container {
+  width: 100%;
+  background-color: #005ede;
+  padding: 2rem;
+  color: white;
+  margin: 0;
+
+  &.afrexim_bg {
+    background-color: #0e0e0e;
+    color: #f4f4f4;
+    padding: 2rem;
+  }
+
+  .scopes {
+    width: 100%;
+    display: flex;
+    padding: 2rem;
+    justify-content: space-between;
+    align-items: baseline;
+
+    .sidebar {
+      h5 {
+        font-weight: 600;
+      }
+    }
+    .main {
+      padding: 0rem 2rem;
+
+      .main_scope {
+        padding: 0rem 2rem;
+        margin-bottom: 1rem;
+      }
+      h3 {
+        font-weight: 600;
+        font-size: 1.5rem;
+      }
+      .main p {
+        font-weight: 300;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .scope_container {
+    padding: 1rem;
+
+    .scopes {
+      flex-direction: column;
+      justify-content: center;
+
+      .sidebar {
+        width: 100%;
+      }
+
+      .main {
+        padding: 0rem;
+        width: 100%;
+
+        h3 {
+          font-size: 1rem;
+        }
+        p {
+          font-size: small;
+          font-weight: 200;
+        }
+        .main_scope {
+          padding: 0rem;
+        }
+      }
+    }
+  }
+}

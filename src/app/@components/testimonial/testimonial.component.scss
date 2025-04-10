@@ -1,0 +1,211 @@
+.container {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+
+  .bg_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #04001f;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+
+    .bg {
+      width: 100%;
+      height: 100%;
+      opacity: 0.5;
+      margin: 0;
+      padding: 0;
+    }
+
+    .frame {
+      display: flex;
+      position: absolute;
+      width: inherit;
+      height: auto;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .client {
+    .client_header {
+      position: absolute;
+      top: 0;
+      width: 100vw;
+      padding: 6.625rem 21.875rem 4.375rem;
+      text-align: center;
+
+      h4 {
+        font-weight: 700;
+        font-size: 3.125rem;
+        line-height: 3.625rem;
+        margin: 0;
+        padding: 0;
+      }
+
+      p {
+        font-weight: 400;
+        font-size: 1.125rem;
+        line-height: 2rem;
+        margin: 0;
+        padding: 0;
+        margin-top: 1.375rem;
+      }
+    }
+
+    .client_testimonial {
+      position: absolute;
+      top: 20rem;
+      width: 100vw;
+      padding: 0 15.03125rem 0 15.03125rem;
+
+      .testimonial {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: #0e061b;
+        padding: 4.75rem 7.375rem 0;
+        p {
+          font-weight: 400;
+          font-size: 1.125rem;
+          line-height: 2rem;
+          margin: 0;
+          letter-spacing: 0;
+          margin-bottom: 5.375rem;
+        }
+
+        .details {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding-bottom: 1.375rem;
+
+          lucide-icon {
+            color: #0e061b;
+            background-color: #fff;
+            border-radius: 50%;
+          }
+          .mobile_icon{
+            display: none;
+          }
+          .client_details {
+            width: 18.4375rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 0 7.5rem;
+
+            img {
+              width: 4.5rem;
+              height: 4.5rem;
+            }
+
+            span {
+              font-weight: 400;
+              font-size: 1.125rem;
+              line-height: 2rem;
+            }
+            h4 {
+              font-weight: 700;
+              font-size: 1.25rem;
+              line-height: 2.25rem;
+              margin: 0.125rem 0;
+              padding: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    
+    .bg_container {
+      display: none;
+    }
+
+    .client {
+        width: 100%;
+        .client_header {
+          position: unset;
+          width: 100%;
+          padding: 2rem 1rem;
+          color: #04001f;
+    
+          h4 {
+            font-size: 1.125rem;
+            line-height: 2rem;
+          }
+    
+          p {
+            font-size: 1rem;
+            line-height: 1.5rem;
+            margin-top: 1.25rem;
+          }
+        }
+    
+        .client_testimonial {
+            position: unset;
+            top: 0;
+            padding: 0;
+    
+          .testimonial {
+            padding: 2rem 1rem 0;
+            p {
+              font-weight: 400;
+              font-size: 1rem;
+              line-height: 1.5rem;
+              margin-bottom: 3.5rem;
+            }
+    
+            .details {
+              padding-bottom: 1.375rem;
+    
+              lucide-icon {
+              display: none;
+              }
+              .mobile_icon{
+               display: inline;
+                color: #0e061b;
+                background-color: #fff;
+                // border-radius: 50%;
+            }
+              .client_details {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 0 1rem;
+    
+                img {
+                  width: 2.5rem;
+                  height: 2.5rem;
+                }
+    
+                span {
+                  font-size: 0.9rem;
+                  line-height: 1.3rem;
+                }
+                h4 {
+                  font-size: 1.2rem;
+                  line-height: 2rem;
+                  margin: 0.125rem 0;
+                  padding: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+}
+}

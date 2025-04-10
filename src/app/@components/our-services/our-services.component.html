@@ -1,0 +1,14 @@
+<div class="our_services">
+   <div class="service" *ngFor="let service of services">
+    <div class="service_wrapper">
+      <div class="service_name">
+        <h2>{{ service.name }}</h2>
+         <p>{{ service.desc }}</p>
+       </div>
+     
+       <lucide-icon name="move-up-right" [size]="30" [strokeWidth]="1.5" class="service_icon"></lucide-icon>
+      
+    </div>
+   </div>
+ </div>
+ 

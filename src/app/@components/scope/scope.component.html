@@ -1,0 +1,14 @@
+<div class="scope_container" *ngIf="scopes" [ngClass]="{'afrexim_bg': isAfrexim, 'scope_container': !isAfrexim }">
+   <div class="scopes" >
+    <div class="sidebar">
+        <h5>Scope/work Timeline</h5>
+    </div>
+    <div class="main">
+        <div class="main_scope" *ngFor="let scope of scopes">
+            <h3>{{scope.title}}</h3>
+            <p>{{scope.desc}}</p>
+            <p>{{scope.desc1}}</p>
+        </div>
+    </div>
+   </div>
+</div>
