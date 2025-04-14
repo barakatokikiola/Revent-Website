@@ -3,9 +3,9 @@
     border-top: solid 1px #2E2B44;
     margin-top: 2rem;
     
-    &.overview_bg{
-        padding: 1.875rem 10rem;   
+    &.overview_bg{  
         background: url("/assets/bg/overview.svg") no-repeat;
+        background-position: 0rem 4rem;
     }
 
 .overview_intro{
@@ -138,11 +138,12 @@
 @media only screen and (max-width:768px) {
     .overview_container{
         padding: 2rem 1rem;
+        border-top: none;
         
-        &.overview_bg{
-            padding: 2.5rem;   
+        &.overview_bg{  
             background: url("/assets/bg/overview.svg") no-repeat;
-            background-size: 15%;
+            background-size: 20%;
+            background-position: 0rem 4rem;
         }
     
     

@@ -35,29 +35,11 @@
         line-height: 2rem;
         margin-bottom: 3.5rem;
       }
-      .icon {
-        button {
-          display: flex;
-          justify-content: center;
-          margin: 0 auto;
-          align-items: center;
-          border: none;
-          outline: none;
-          width: 16.125rem;
-          height: 3.75rem;
-          border-radius: 2.5rem;
-          padding: 0;
-          color: #8247d7;
-          background-color: #fff;
-          gap: 0.8125rem;
-
-          span {
-            font-size: 1.25rem;
-            font-weight: 700;
-            line-height: 2.25rem;
-          }
+      .btn_container {
+        display: flex;
+        justify-content: center;
         }
-      }
+      
     }
   }
 

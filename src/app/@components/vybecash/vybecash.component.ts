@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VybecashComponent implements OnInit {
 
-  vybecashHeader=[{
+  header=[{
     logo:"assets/logos/colored-logo.svg",
     routeTo: '/optiva',
     routeName: 'Optiva',
@@ -22,7 +22,7 @@ export class VybecashComponent implements OnInit {
 
   vybecash = [
     {
-      btn: ['Mobile App', 'Fintech', 'Finance'],
+      btn: ['Websites', 'Web applications', 'SAAS'],
       btnColors: ['#FEE6FA', '#E3D6F6', '#DEDEDE'],
       overview: "Vybecash is a platform that enhances users' digital payment experiences with financial accounts, transfers, bill payments, and savings services.",
       statement1: "Traditional financial transactions and banking services often prove cumbersome and time-consuming. Individuals, businesses, and organizations face numerous challenges, including slow money transfers, lack of transparency, security concerns, and limited access to modern financial tools.",

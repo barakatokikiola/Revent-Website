@@ -23,6 +23,7 @@ import { OtherComponent } from './@shared/other/other.component';
 import { OptivascopeComponent } from './@components/optivascope/optivascope.component';
 import { HeaderComponent } from './@shared/header/header.component';
 import { ButtonComponent } from './@shared/button/button.component';
+import { NavbarComponent } from './@shared/navbar/navbar.component';
 
 
 
@@ -48,7 +49,8 @@ import { ButtonComponent } from './@shared/button/button.component';
     OtherComponent,
     OptivascopeComponent,
     HeaderComponent,
-    ButtonComponent
+    ButtonComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

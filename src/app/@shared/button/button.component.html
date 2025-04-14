@@ -1,5 +1,5 @@
-<button [type]="type" class="btn">
-    {{ text }}
+<button [type]="type" class="btn" [ngClass]="{'idea' : isIdea }">
+   <span> {{ text }}</span>
     <lucide-icon
     name="arrow-right"
     [size]="24"

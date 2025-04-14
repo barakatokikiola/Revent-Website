@@ -2,36 +2,11 @@
   position: relative;
   width: 100vw;
   color: #fff;
-  .absolute_element {
+  
     .nav_container {
       position: absolute;
-      top: 0;
-      left: 0;
       width: 100%;
-      padding: 1.325rem 9rem;
-      .nav {
-        width: 100%;
-
-        .mobile-background{
-          background-color: #fff;
-        }
-
-        .nav_links {
-          display: flex;
-          gap: 1.2rem;
-
-          
-
-          a {
-            text-decoration: none;
-            color: #fff;
-            font-size: 1rem;
-            line-height: 1.75rem;
-            padding: 0.25rem;
-          
-          }
-        }
-      }
+      z-index: 2;
     }
 
     .header_links {
@@ -106,37 +81,21 @@
         padding: 29.1875rem 12.906875rem 0;
       }
     }
-  }
+  
 }
 
 @media only screen and (max-width: 768px) {
   .header {
-    .absolute_element {
+ 
       .nav_container {
         padding: 1rem;
         width: 100%;
         z-index: 2;
-
-    
-          
-          .nav_links {
-      
-            gap: 0;
-
-            a {
-             
-              font-size: 0.75rem;
-              line-height: 1rem;
-              padding: 0;
-            }
-          }
-        
-
         }
       
 
       .header_links {
-        padding: 4rem 2rem 0;
+        padding: 5rem 2rem 0;
         z-index: 1;
 
         h1 {
@@ -180,4 +139,4 @@
         .brand_image {
           display: none;
         }
-        }}}}
+        }}}
