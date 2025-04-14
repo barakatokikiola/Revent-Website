@@ -1,7 +1,7 @@
-<app-header [headers]="headerService.optiva"></app-header>
- <app-overview [data]="overviewService.optiva" [isAfrexim]="false"></app-overview>
+<app-header [headers]="header"></app-header>
+ <app-overview [data]="overview" [isAfrexim]="false"></app-overview>
 <app-optivascope></app-optivascope>
- <app-features [feature]="featureService.optiva"></app-features>
-<app-results></app-results>
+ <app-features [feature]="feature"></app-features>
+<app-results [isAfrexim]="false"></app-results>
 <app-other></app-other>
 <app-footer></app-footer>

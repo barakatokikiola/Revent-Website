@@ -1,0 +1,17 @@
+<div class="scope_container" *ngIf="scopes" [ngClass]="{'afrexim': isAfreximBg }">
+   <div class="scopes" >
+    <div class="sidebar">
+        <h5 [ngClass]="{'afrexim_text': isAfreximBg }">Scope/work Timeline</h5>
+    </div>
+    
+    <div class="main">
+        <div class="main_scope" *ngFor="let scope of scopes">
+            <h3>{{scope.title}}
+                <span *ngIf="scope.span !== ''">{{scope.span}}</span>
+            </h3>
+            <p>{{scope.desc}}</p>
+            <p>{{scope.desc1}}</p>
+        </div>
+    </div>
+   </div>
+</div>

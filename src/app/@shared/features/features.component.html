@@ -1,0 +1,28 @@
+<div class="features_container" *ngIf="feature">
+  <div class="side_content">
+    <h4 class="muted_text">Designs & Iterations</h4>
+    <app-button text="See Live"></app-button>
+  </div>
+ 
+
+  
+  
+    <div class="main_content">
+        <div class="content_header">
+            <h3>Some features we implemented</h3>
+        </div>
+      
+      <div class="content_details" *ngFor="let f of feature">
+        <h4>{{ f.title }}</h4>
+        <p>{{ f.desc1 }}</p>
+        <p>{{ f.desc2 }}</p>
+        <img *ngIf="f.img" [src]="f.img" alt="" />
+        <div class="thumbnail">
+            <ng-container *ngFor="let item of f.thumbnail">
+              <img *ngIf="item" [src]="item" alt="feature thumbnail" />
+            </ng-container>
+          </div>          
+      </div>
+    </div>
+  </div>
+

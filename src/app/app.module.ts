@@ -10,18 +10,19 @@ import { TrusteeComponent } from './@components/trustee/trustee.component';
 import { TestimonialComponent } from './@components/testimonial/testimonial.component';
 import { RecentblogComponent } from './@components/recentblog/recentblog.component';
 import { ReadaboutusComponent } from './@components/readaboutus/readaboutus.component';
-import { FooterComponent } from './@components/footer/footer.component';
+import { FooterComponent } from './@shared/footer/footer.component';
 import { VybecashComponent } from './@components/vybecash/vybecash.component';
 import { HomeComponent } from './@components/home/home.component';
 import { AfreximComponent } from './@components/afrexim/afrexim.component';
 import { OptivaComponent } from './@components/optiva/optiva.component';
-import { OverviewComponent } from './@components/overview/overview.component';
-import { ScopeComponent } from './@components/scope/scope.component';
-import { FeaturesComponent } from './@components/features/features.component';
-import { ResultsComponent } from './@components/results/results.component';
-import { OtherComponent } from './@components/other/other.component';
+import { OverviewComponent } from './@shared/overview/overview.component';
+import { ScopeComponent } from './@shared/scope/scope.component';
+import { FeaturesComponent } from './@shared/features/features.component';
+import { ResultsComponent } from './@shared/results/results.component';
+import { OtherComponent } from './@shared/other/other.component';
 import { OptivascopeComponent } from './@components/optivascope/optivascope.component';
-import { HeaderComponent } from './@components/header/header.component';
+import { HeaderComponent } from './@shared/header/header.component';
+import { ButtonComponent } from './@shared/button/button.component';
 
 
 
@@ -46,7 +47,8 @@ import { HeaderComponent } from './@components/header/header.component';
     ResultsComponent,
     OtherComponent,
     OptivascopeComponent,
-    HeaderComponent
+    HeaderComponent,
+    ButtonComponent
   ],
   imports: [
     BrowserModule,
