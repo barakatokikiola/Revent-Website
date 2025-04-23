@@ -1,4 +1,4 @@
-.container {
+.testimonial_container {
   position: relative;
   margin: 0;
   padding: 0;
@@ -127,7 +127,7 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .container {
+  .testimonial_container {
     
     .bg_container {
       display: none;

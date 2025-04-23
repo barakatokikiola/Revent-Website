@@ -9,10 +9,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  
+
   &.idea {
     background-color: #ffffff;
     color: #7433d3;
+
     &.idea:hover span {
       color: #ffffff;
     }
@@ -20,7 +22,7 @@
   span {
     font-size: 1.25rem;
     font-weight: 700;
-    transition: all 0.8s ease;
+    transition: 0.5s;
   }
 
   lucide-icon {
@@ -31,7 +33,7 @@
     background-color: #000;
     span {
       display: inline-block;
-      transform: scale(1.05);
+      padding-right: 1rem;
     }
     lucide-icon {
       display: inline-flex;

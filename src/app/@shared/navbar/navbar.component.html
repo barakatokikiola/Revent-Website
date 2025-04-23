@@ -9,7 +9,7 @@
     <div class="collapse navbar-collapse menu" id="navbarNavAltMarkup">
       <div class="navbar-nav ms-auto nav_links" [ngClass]="{'vybecash' : data[0].title === 'VybeCash'}">
         <a routerLink="{{data[0].routeTo}}" [routerLinkActive]="'active_link'" class="nav-link">{{data[0].routeName}}</a>
-        <a routerLink="" [routerLinkActive]="'active_link'" class="nav-link">Our Services</a>
+        <a routerLink="/" [routerLinkActive]="'active_link'" class="nav-link">Our Services</a>
         <a routerLink="/projects" [routerLinkActive]="'active_link'" class="nav-link">Our Projects</a>
         <a routerLink="/hire" [routerLinkActive]="'active_link'" class="nav-link">Hire a Developer</a>
       </div>

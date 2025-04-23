@@ -1,6 +1,7 @@
 .trustees{
     display: flex;
     flex-direction: column;
+    
 
     .header{
         display: flex;
@@ -18,37 +19,40 @@
         }
       
     }
-
-    .trustee{
+    .trustee {
         display: flex;
-        justify-content: space-evenly;
-        padding-left: 9rem;
-        padding-bottom: 6.22rem;
-        padding-top: 4.75rem;
-        gap: 5rem;
-        margin: 0;
-      
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        padding: 4.75rem 0 6.22rem;
+        left: 9rem;
     
-
-            img{
-                width: 100%;
-                height: auto;
-            }
+        .trustee_track {
+          display: inline-block;
+          white-space: nowrap;
+          animation: scroll-left 20s linear infinite;
+    
+          img {
+            width: auto;
+            height: auto; 
+            margin-right: 5rem;
+            vertical-align: middle;
+          }
         }
-
-        
     
+        @keyframes scroll-left {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-100%);
+          }
+        }
+      }
 }
 
 
-// @keyframes scroll {
-//     from {
-//       transform: translateX(0);
-//     }
-//     to {
-//       transform: translateX(-50%);
-//     }
-//   }
+
 
 
 @media only screen and (max-width: 768px) {
@@ -58,11 +62,25 @@
                 font-size: 1rem;
             }
         }
-        .trustee{
-        width: 100%;
-        padding: 1rem 0.25rem 3rem 2rem;
-        gap: 1rem;
-
+        .trustee {
+            
+            left: 2rem;
+            display: flex;
+            gap: 3rem;
+           
+        
+             
+    
+        .trustee_track {
+          
+            gap: 3rem;
+        
+          
+    
+       
+    
+         
+    }
     }
 }
 }

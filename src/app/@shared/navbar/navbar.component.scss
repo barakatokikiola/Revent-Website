@@ -38,6 +38,16 @@
 @media only screen and (max-width: 768px) {
   .navbar {
     padding: 0 1rem;
+ 
+ button{
+   lucide-icon{
+    color: #f4f4f4;
+   }
+   &:clicked lucide-icon{
+    border: none;
+    outline: none;
+   }
+ }
 
     .menu {
       background-color: #fff;

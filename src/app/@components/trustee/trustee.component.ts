@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { TrusteeService } from 'src/app/@core/services/trustee.service';
 
 @Component({
   selector: 'app-trustee',
@@ -8,11 +7,34 @@ import { TrusteeService } from 'src/app/@core/services/trustee.service';
 })
 export class TrusteeComponent implements OnInit {
 
-   trustees: {img: string}[]=[];
-  constructor(private trusteeService: TrusteeService) { }
+   trustees=[
+    {
+      img: 'assets/logos/wema.svg'
+    },
+    {
+      img: 'assets/logos/afrex.svg'
+    },
+    {
+      img: 'assets/logos/optiva.svg'
+    },
+    {
+      img: 'assets/logos/sterling.svg'
+    },
+    {
+      img: 'assets/logos/zenith.svg'
+    },
+    {
+      img: 'assets/logos/leatherback.svg'
+    },
+    {
+      img: 'assets/logos/anelloh.svg'
+    },
+   ]
+  
+  constructor() { }
 
   ngOnInit(): void {
-    this.trustees = this.trusteeService.trustees;
+    this.trustees = this.trustees;
   }
 
 }

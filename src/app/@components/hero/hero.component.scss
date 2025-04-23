@@ -38,6 +38,40 @@
       margin-top: 1rem;
       margin-bottom: 3.625rem;
     }
+    button {
+      background-color: #7433d3;
+      border-radius: 40px;
+      width: 16.1875rem;
+      height: 3.75rem;
+      outline: none;
+      border: none;
+      color: #ffffff;
+      
+      span {
+        font-size: 1.25rem;
+        font-weight: 700;
+        transition: 0.5s;
+      }
+    
+      lucide-icon {
+        display: none;
+      }
+    
+      &:hover {
+        
+        span {
+          display: inline-block;
+          padding-right: 1rem;
+        }
+        lucide-icon {
+          display: inline-block;
+          color: #ffffff;
+          vertical-align: baseline;
+        }
+      }
+    }
+    
+  
     .explore {
       display: flex;
       gap: 0.625rem;
@@ -109,9 +143,10 @@
     padding: 7rem 1rem 3em 1rem;
 
     .hero_text {
+      flex-direction: column;
+      justify-content: center;
       position: unset;
       width: 100%;
-      height: 100%;
 
       h2 {
         font-size: 3rem;
@@ -126,7 +161,7 @@
       .explore {
         display: flex;
         gap: 0.625rem;
-        justify-content: start;
+        justify-content: center;
 
         .explore_link {
           font-size: 1rem;

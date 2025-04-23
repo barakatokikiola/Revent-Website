@@ -12,19 +12,19 @@ export class AfreximComponent implements OnInit {
       title: 'Flowmono - Discovery Phase',
       desc: 'One of the major lessons from the pandemic era is that business process configuration is a key requirement for ensuring business continuity.',
       desc1: 'In the current African business landscape, business owners express their frustrations over the rising rate of developer attritions and the shortage of developers that can help them design and develop business process automation. Most of the available process management solutions are built around an expensive budget, complex architecture, and take time to implement'
-    ,span:'' 
+    ,span: false 
     },
     {
       title: 'Flowmono 1.0',
       desc: 'One of the major lessons from the pandemic era is that business process configuration is a key requirement for ensuring business continuity',
       desc1: 'In the current African business landscape, business owners express their frustrations over the rising rate of developer attritions and the shortage of developers that can help them design and develop business process automation. Most of the available process management solutions are built around an expensive budget, complex architecture, and take time to implement.'
-    ,span:''
+    ,span: false
     },
     {
       title: 'Flowmono 2.0',
       desc: 'Flowmono makes contract and agreement processes easier. Individuals and freelancers, small and medium enterprises, and major corporations looking to reduce paperwork and move to a paperless process can benefit from the solution',
        desc1: 'According to an Onespan report, financial institutions that implemented electronic signatures saw a 92% reduction in scanning errors and missing files by 66%.To reinforce the confidence and safety of users’ data, Flowmono uses encryption technology to protect user data'
-      ,span:'Coming soon'
+      ,span: true
       },
   ]
   

@@ -3,11 +3,21 @@
         <h4>We are trusted by enterprises and startups like:</h4>
     </div>
   
-    <div class="trustee">
-        <div  *ngFor="let trustee of trustees">
-         <img [src]="trustee.img" alt="" loading="lazy">
+
+         <div class="trustee">
+        <div class="trustee_track" >
       
+         <img *ngFor="let trustee of trustees" [src]="trustee.img" alt="" >
+    
+        
         </div>
+        <div class="trustee_track" >
+      
+            <img *ngFor="let trustee of trustees" [src]="trustee.img" alt="" >
+       
+           
+           </div>
+        
      </div>
    </div>
 
