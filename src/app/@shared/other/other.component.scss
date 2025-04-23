@@ -75,10 +75,7 @@
           height: auto;
         }
         @keyframes zoom {
-          0% {
-            scale: 100%;
-          }
-
+        
           100% {
             scale: 200%;
           }
@@ -127,16 +124,16 @@
         padding: 1rem 2rem;
 
         h4 {
-          font-size: 0.75rem;
-          line-height: 1rem;
-        }
-        h3 {
           font-size: 1rem;
           line-height: 1.5rem;
         }
+        h3 {
+          font-size: 1.5rem;
+          line-height: 2rem;
+        }
         p {
-          font-size: 0.75rem;
-          line-height: 1rem;
+          font-size: 1rem;
+          line-height: 1.5rem;
         }
 
         &:hover {
