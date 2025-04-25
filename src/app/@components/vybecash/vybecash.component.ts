@@ -11,6 +11,12 @@ export class VybecashComponent implements OnInit {
       logo: 'assets/logos/colored-logo.svg',
       routeTo: '/optiva',
       routeName: 'Optiva',
+      items:[
+        { route: '', label: 'Home' },
+        { route: '/services', label: 'Our Services' },
+        { route: '/optiva', label: 'Optiva' },
+        { route: '/afrexim', label: 'Afrexim' }
+       ],
       title: 'VybeCash',
       desc: 'Manage your wallet and transactions.',
       btn: ['Mobile App', 'Fintech', 'Finance'],
@@ -81,7 +87,6 @@ export class VybecashComponent implements OnInit {
       thumbnail: [''],
     },
   ];
-
   constructor() {}
 
   ngOnInit(): void {}

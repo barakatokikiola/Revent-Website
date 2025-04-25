@@ -10,7 +10,7 @@ export class HeaderComponent implements OnInit {
   isMobile: boolean = false;
 
  @Input() headers: any;
-
+ @Input() linkColor: string='';
   constructor() { }
 
   ngOnInit(): void {

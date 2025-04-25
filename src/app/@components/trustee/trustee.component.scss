@@ -23,19 +23,19 @@
         display: flex;
         position: relative;
         overflow: hidden;
-        width: 100%;
         padding: 4.75rem 0 6.22rem;
         left: 9rem;
-    
+        
         .trustee_track {
-          display: inline-block;
+          display: flex;
           white-space: nowrap;
+          gap: 5rem;
+          min-width: 90%;
           animation: scroll-left 20s linear infinite;
     
           img {
             width: auto;
             height: auto; 
-            margin-right: 5rem;
             vertical-align: middle;
           }
         }
@@ -63,19 +63,18 @@
             }
         }
         .trustee {
-            
+            gap: 2rem;
             left: 2rem;
-            display: flex;
-            gap: 3rem;
            
         
              
     
         .trustee_track {
-          
-            gap: 3rem;
+          flex-shrink: 0; 
+          min-width: 100%;
+            gap: 2rem;
         
-          
+           
     
        
     

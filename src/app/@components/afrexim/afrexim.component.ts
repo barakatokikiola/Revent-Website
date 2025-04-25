@@ -60,6 +60,12 @@ export class AfreximComponent implements OnInit {
  header=[{
   logo:"assets/bg/reventwhite.svg",
   routeTo: '',
+  items:[
+    { route: '', label: 'Home' },
+    { route: '/vybe', label: 'VybeCash' },
+    { route: '/services', label: 'Our Services' },
+    { route: '/optiva', label: 'Optiva' },
+   ],
   desc: 'Vendor management portal',
   routeName: 'Home',
   title: 'Afrexim',

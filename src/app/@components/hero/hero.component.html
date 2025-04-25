@@ -1,29 +1,13 @@
 <div class="hero_container">
   <div class="nav_container">
-  <nav class="navbar navbar-expand-lg d-flex">
-    <a routerLink="" class="navbar-brand">
-      <img src="assets/revent.svg" alt="logo" class="nav_logo" loading="lazy" />
-    </a>
-    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" 
-      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <lucide-icon name="menu"></lucide-icon>
-    </button>
-    <div class="collapse navbar-collapse menu" id="navbarNavAltMarkup">
-      <div class="navbar-nav ms-auto nav_links">
-        <a routerLink="/vybe" [routerLinkActive]="'active_link'" class="nav-link">VybeCash</a>
-        <a routerLink="" [routerLinkActive]="'active_link'" class="nav-link">Our Services</a>
-        <a routerLink="/projects" [routerLinkActive]="'active_link'" class="nav-link">Our Projects</a>
-        <a routerLink="/hire" [routerLinkActive]="'active_link'" class="nav-link">Hire a Developer</a>
-      </div>
-    </div>
-  </nav>
+ <app-navbar [data]="navbar" linkColor="black"></app-navbar>
   </div>
 
 <div class="hero">
    
     <div class="hero_text">
         <div class="hero_title">
-            <h2>You think it,
+            <h2 class="">You think it,
                 <br><span class="colored_text">We build it</span>
             </h2>
             <p>Get help you at every stage of your product development lifecycle. Conquer the market with a truly invested software technology team by your side.</p>

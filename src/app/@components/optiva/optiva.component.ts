@@ -12,6 +12,12 @@ export class OptivaComponent implements OnInit {
   header=[{
     logo:"assets/bg/reventwhite.svg",
     routeTo: '/afrexim',
+    items:[
+      { route: '', label: 'Home' },
+      { route: '/vybe', label: 'VybeCash' },
+      { route: '/services', label: 'Our Services' },
+      { route: '/afrexim', label: 'Afrexim' }
+     ],
     routeName: 'Afrexim',
     title: 'Optiva Capital',
     desc: 'Immigration investment & wealth management',

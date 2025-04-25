@@ -7,6 +7,14 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
+
+  menuOpen = false;
+
+  toggleMenu() {
+    this.menuOpen = !this.menuOpen;
+  }
+
+  @Input() linkColor: string = '';
    @Input() data: any; 
   constructor() { }
 
