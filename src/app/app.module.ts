@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { ArrowDown, ArrowRight, ChevronLeft, ChevronRight, CircleChevronLeft, CircleChevronRight, LucideAngularModule, Maximize2, Menu, MoveDown, MoveRight, MoveUpRight} from 'lucide-angular';
+import { ArrowDown, ArrowRight, ChevronLeft, ChevronRight, ArrowUpRight, LucideAngularModule, Maximize2, Menu, MoveRight, MoveUpRight} from 'lucide-angular';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeroComponent } from './@components/hero/hero.component';
@@ -55,7 +55,7 @@ import { NavbarComponent } from './@shared/navbar/navbar.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    LucideAngularModule.pick({Maximize2,Menu,ArrowDown,MoveUpRight,ArrowRight,MoveRight,ChevronLeft,ChevronRight}),
+    LucideAngularModule.pick({Maximize2,Menu,ArrowDown,MoveUpRight,ArrowRight,MoveRight,ChevronLeft,ChevronRight, ArrowUpRight}),
 
     
   ],

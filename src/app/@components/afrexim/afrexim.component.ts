@@ -72,7 +72,7 @@ export class AfreximComponent implements OnInit {
   btn: ['Websites', 'Web applications', 'SAAS'],
   btnColors: ['#FEE6FA', '#E3D6F6','#FEE6FA'],
   bg: 'assets/bg/afrex.jpg',
-  img: 'assets/afrex.jpg',
+  img: 'assets/afrex.png',
  
 }]
   constructor() { }

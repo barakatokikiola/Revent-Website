@@ -33,7 +33,7 @@ export class OptivaComponent implements OnInit {
       title: '1. Quote calculator (Help to calculate total cost to be paid)',
       desc1: "QR code payments are made via the customer's smartphone when they scan the code. Once saved, they are taken to a payment page where they will have the option to enter their chosen payment details or use a mobile payment solution to complete the transaction.",
       desc2: "A vendor can also scan a QR code on their customer's phone. This code is provided by their bank or payment app and will contain their card details, which the business can use to finalize the transaction.",
-      img: 'assets/f.png',
+      img: 'assets/vybe1.png',
       thumbnail:['assets/thumb1.png']
     },
     {

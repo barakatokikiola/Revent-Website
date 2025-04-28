@@ -1,85 +1,72 @@
-.trustees{
+.trustees {
+  display: flex;
+  flex-direction: column;
+
+  .header {
     display: flex;
-    flex-direction: column;
-    
+    margin: 0;
+    justify-content: center;
+    text-align: center;
+    padding-top: 2.625rem;
 
-    .header{
-        display: flex;
-        margin: 0;
-        justify-content: center;
-        text-align: center;
-        padding-top: 2.625rem;
-
-        h4{
-            font-weight: 600;
-            font-size: 1.5rem;
-            line-height: 2rem;
-            letter-spacing: 2%;
-            margin: 0;
-        }
-      
+    h4 {
+      font-weight: 600;
+      font-size: 1.5rem;
+      line-height: 2rem;
+      letter-spacing: 2%;
+      margin: 0;
     }
-    .trustee {
-        display: flex;
-        position: relative;
-        overflow: hidden;
-        padding: 4.75rem 0 6.22rem;
-        left: 9rem;
-        
-        .trustee_track {
-          display: flex;
-          white-space: nowrap;
-          gap: 5rem;
-          min-width: 90%;
-          animation: scroll-left 20s linear infinite;
-    
-          img {
-            width: auto;
-            height: auto; 
-            vertical-align: middle;
-          }
-        }
-    
-        @keyframes scroll-left {
-          0% {
-            transform: translateX(0);
-          }
-          100% {
-            transform: translateX(-100%);
-          }
-        }
+  }
+  .trustee {
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+    position: relative;
+    overflow: hidden;
+    padding: 4.75rem 0 6.22rem;
+    left: 9rem;
+
+    .trustee_track {
+      display: flex;
+      white-space: nowrap;
+      gap: 5rem;
+      min-width: 90%;
+      animation: scroll-left 20s linear infinite;
+
+      img {
+        width: auto;
+        height: auto;
+        vertical-align: middle;
       }
+    }
+
+    @keyframes scroll-left {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+  }
 }
-
-
-
-
 
 @media only screen and (max-width: 768px) {
-    .trustees{
-        .header{
-            h4{
-                font-size: 1rem;
-            }
-        }
-        .trustee {
-            gap: 2rem;
-            left: 2rem;
-           
-        
-             
-    
-        .trustee_track {
-          flex-shrink: 0; 
-          min-width: 100%;
-            gap: 2rem;
-        
-           
-    
-       
-    
-         
+  .trustees {
+    .header {
+      h4 {
+        font-size: 1rem;
+      }
     }
+    .trustee {
+      gap: 2rem;
+      left: 2rem;
+
+      .trustee_track {
+        flex-shrink: 0;
+        min-width: 100%;
+        gap: 2rem;
+      }
     }
-}
+  }
 }
