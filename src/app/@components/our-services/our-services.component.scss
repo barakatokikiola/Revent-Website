@@ -1,0 +1,110 @@
+.our_services {
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f4f4;
+  padding: 4.75rem 8.9375rem 10.4375rem 9rem;
+  width: 100%;
+  gap: 1.875rem;
+
+  .service {
+    width: 100%;
+    color: #58556a;
+    
+    margin: 0;
+    padding: 0;
+
+    .service_wrapper {
+      display: flex;
+      align-items: first baseline;
+      border-bottom: solid 2px #0e0e0e;
+      margin: 0;
+      padding: 0;
+      width: 100%;
+
+      .service_name {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+
+        h2 {
+          font-weight: 700;
+          font-size: 2.5rem;
+          line-height: 3.75rem;
+          margin: 0;
+          margin-bottom: 1rem;
+          transition: transform 0.3s ease-in-out;
+          transform-origin: left;
+        }
+
+        p {
+          margin: 0;
+          padding: 0;
+          margin-bottom: 0.625rem;
+          width: 40.5rem;
+          font-size: 1.125rem;
+          line-height: 2rem;
+        }
+      }
+      .service_icon {
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+      }
+      &:hover {
+        h2 {
+          text-decoration: underline;
+          text-decoration-thickness: 1.5px;
+          color: #7433d3;
+          transform: scale(1.1, 1.1);
+          text-underline-offset: 7px;
+        }
+
+        .service_icon {
+          opacity: 1 !important;
+          transform: translateX(5px);
+          color: #2e2b44;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .our_services {
+    padding: 2rem 1.5rem 4rem 1.5rem;
+    gap: 1rem;
+
+    .service {
+      .service_wrapper {
+          .service_name {
+            width: 100%;
+          h2 {
+            font-size: 1.4rem;
+            line-height: 2rem;
+            margin-bottom: 1rem;
+          }
+          p {
+            
+          width: 100%;
+          font-size: 1rem;
+          line-height: 1.5rem;
+          }
+        }
+        &:hover {
+          h2 {
+            text-decoration: unset;
+            color: unset;
+            transform: unset;
+          }
+  
+          .service_icon {
+            opacity: 0 !important;
+            transform: unset;
+          }
+        }
+       
+      }
+     
+    }
+  }
+}

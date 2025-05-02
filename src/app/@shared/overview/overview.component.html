@@ -1,0 +1,62 @@
+<div
+*ngIf="data"
+  class="overview_container"
+  [ngClass]="{' overview_bg': isAfrexim }"
+>
+  <div class="overview" >
+    <div class="overview_intro">
+      <div class="overview_sidebar">
+        <h3 class="muted_text">Overview</h3>
+        <app-button text="See Live"></app-button>
+      </div>
+
+      <div class="overview_main">
+        <button *ngFor="let item of data[0].btn; let i = index" [ngStyle]="{ 'background-color': data[0].btnColors[i] }">
+          {{item}}
+        </button> 
+      <div class="overview_description">
+        <h2>{{ data[0].overview }}</h2>
+        <div class="others">
+          <div class="list">
+            <h5>Development Tools</h5>
+            <p>React, Next, Vue</p>
+          </div>
+          <div class="list">
+            <h5>Design Tools</h5>
+            <p>Figma, Jira</p>
+          </div>
+          <div class="list">
+            <h5>Duration</h5>
+            <p>May 2021 - Ongoing</p>
+          </div>
+        </div>
+      </div>
+
+      </div>
+      </div>
+
+      <div class="solution_container">
+        <div class="solution_header">
+          <h4 class="muted_text">Problem & Solution</h4>
+        </div>
+      <div class="solution_description">
+      <div class="statement">
+        <h3>Problem Statement</h3>
+        <div class="details">
+          <p>{{ data[0].statement1 }}</p>
+        <p>{{ data[0].statement2 }}</p>
+        </div>
+      </div>
+          <div class="solution">
+            <h3>Solution</h3>
+          <div class="solution_details">
+            <p>{{ data[0].solution1 }}</p>
+          <p>{{ data[0].solution2 }}</p>
+          </div>
+          </div>
+       </div>
+      </div>
+  </div>
+   
+    </div>
+

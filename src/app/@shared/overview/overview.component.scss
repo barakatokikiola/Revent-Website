@@ -1,0 +1,250 @@
+.overview_container{
+    padding: 1.875rem 9rem;
+    margin-top: 2rem;
+    
+    &.overview_bg{  
+        background: url("/assets/bg/overview.svg") no-repeat;
+        background-position: 0rem 4rem;
+    }
+
+.overview_intro{
+    display: flex;
+    justify-content: space-between;
+
+    .overview_sidebar{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        h3{
+            font-size: 1.25rem;
+            line-height: 2.25rem;
+            margin: 0;
+            margin-bottom: 3.375rem;
+        }
+        
+    }
+
+    .overview_main{
+        width: 53.125rem;
+        text-align: start;
+        button{
+            margin-bottom: 1.5rem;
+            margin-right: 0.9375rem;
+        }
+        .overview_description{
+
+            h2{
+                font-weight: 700;
+                font-size: 2.5rem;
+                line-height: 3.75rem;
+                margin: 0;
+                margin-bottom: 3.75rem;
+            }
+            .others{
+                display: flex;
+                gap: 5.375rem;
+                margin-bottom: 7.375rem;
+                text-align: start;
+
+                .list{
+                    h5{
+                        font-size: 1.25rem;
+                        line-height: 2.25rem;
+                        margin-bottom: 0.3125rem;
+                        color: #2E2B44;
+                    }
+
+                    p{
+                        font-size: 1.125rem;
+                        line-height: 2.25rem;
+                        color: #58556A;
+                    }    
+                }
+            }
+         
+        }
+       
+    }
+}
+.solution_container{
+    display: flex;
+    justify-content: space-between;
+ 
+    .solution_header{
+        display: flex;
+        justify-content: start;
+        h4{
+            font-size: 1.25rem;
+            line-height: 2.25rem;
+            margin: 0;
+        }
+    }
+   
+    .solution_description{
+        width: 53.125rem;
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+        gap: 1.25rem;
+           .statement{
+            h3{
+                font-size: 2.5rem;
+                line-height: 3.75rem;
+                font-weight: 700;
+                margin: 0;            }
+           .details{
+                display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+               
+                p{
+                    font-size: 1.125rem;
+                    line-height: 2rem;
+                    font-weight: 400;
+                    margin: 0;
+                    color: #58556A;
+                }
+            }
+           }
+           .solution{
+            h3{
+                font-size: 2.5rem;
+                line-height: 3.75rem;
+                font-weight: 700;
+                margin: 0;            }
+            .solution_details{
+                 display: flex;
+             flex-direction: column;
+             gap: 1.25rem;
+                
+                 p{
+                     font-size: 1.125rem;
+                     line-height: 2rem;
+                     font-weight: 400;
+                     margin: 0;
+                     color: #58556A;
+                 }
+             }
+            }
+        }
+      
+    }
+}
+
+
+
+@media only screen and (max-width:768px) {
+    .overview_container{
+        padding: 2rem 1rem;
+        border-top: none;
+        
+        &.overview_bg{  
+            background: url("/assets/bg/overview.svg") no-repeat;
+            background-size: 20%;
+            background-position: 0rem 4rem;
+        }
+    
+    
+    .overview_intro{
+       flex-direction: column;
+        .overview_sidebar{
+            text-align: center;
+            width: 100%;
+            h3{
+                font-size: 1rem;
+                line-height: 2rem;
+                margin-bottom: 1rem;
+            }
+            button{
+                width: 9rem;
+                height: 3rem;
+                font-size: 1rem;
+                margin-bottom: 2rem;
+               
+            }
+        }
+    
+        .overview_main{
+            width: 100%;
+            button{
+                margin-top: 1rem;
+                margin-bottom: 1.5rem;
+                margin-right: 0.9375rem;
+            }
+            .overview_description{
+    
+                h2{
+                    font-size: 2rem;
+                    line-height: 3rem;
+                }
+                .others{
+                    flex-direction: column;
+                    gap: 1rem;
+                    .list{
+                        h5{
+                            font-size: 1.25rem;
+                            line-height: 2.25rem;
+                            margin-bottom: 0.3125rem;
+                            color: #2E2B44;
+                        }
+    
+                        p{
+                            font-size: 1rem;
+                            line-height: 2rem;
+                        }    
+                    }
+                }
+             
+            }
+           
+        }
+    }
+    .solution_container{
+        flex-direction: column;
+     
+        .solution_header{
+           
+            h4{
+                font-size: 1rem;
+                line-height: 2rem;
+             
+            }
+        }
+       
+        .solution_description{
+            width: 100%;
+           
+            gap: 1rem;
+               .statement{
+                h3{
+                    font-size: 2rem;
+                    line-height: 3rem;
+                   
+                gap: 1rem;
+                   
+                    p{
+                        font-size: 1rem;
+                    }
+                }
+               }
+               .solution{
+                h3{
+                    font-size: 2rem;
+                    line-height: 3rem;      }
+                .solution_details{
+                 gap: 1rem;
+                    
+                     p{
+                         font-size: 1rem;
+                         line-height: 2rem;
+                     }
+                 }
+                }
+            }
+          
+        }
+    }
+    
+    
+}

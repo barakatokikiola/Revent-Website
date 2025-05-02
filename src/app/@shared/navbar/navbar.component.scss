@@ -1,0 +1,15 @@
+.link{
+  color: #fff;
+}
+.link.black{
+  color: #000;
+}
+
+@media only screen and (max-width: 768px) {
+  .link{
+    color: #000;
+  }
+  .link.black{
+    color: #000;
+  }
+}

@@ -1,0 +1,28 @@
+<nav class="bg-transparent lg:px-[9rem] px-[2rem]">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-[1.32rem]">
+    <a routerLink="" class="flex items-center">
+      <img [src]="data[0].logo" alt="logo" class="nav_logo">
+    </a>
+
+    <!-- Hamburger Button -->
+    <button (click)="toggleMenu()" type="button" 
+      class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 fo s:outline-none focus:ring-2 focus:ring-gray-200" 
+      aria-controls="navbar-default" aria-expanded="{menuOpen ? 'true' : 'false'}">
+        <span class="sr-only">Open main menu</span>
+        <lucide-icon name="menu"></lucide-icon>
+    </button>
+
+    <!-- Menu -->
+   <div [ngClass]="{'hidden': !menuOpen, 'block': menuOpen, 'w-full': menuOpen, 'md:block': !menuOpen}" id="navbar-default">
+  <ul class="flex flex-col p-4 md:p-0 border bg-white md:bg-transparent border-gray-500 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
+    <li *ngFor="let item of data[0].items">
+      <a [routerLink]="item.route" [ngClass]="linkColor ? linkColor : ''" class="link block p-[0.25rem] rounded-sm md:bg-transparent md:p-0"
+      >
+        {{ item.label }}
+      </a>
+    </li>
+  </ul>
+</div>
+
+  </div>
+</nav>

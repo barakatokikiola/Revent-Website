@@ -1,0 +1,31 @@
+<div class="header" *ngIf="headers">
+
+<div class="nav_container" >
+   <app-navbar [data]="headers" [linkColor]="linkColor"></app-navbar>
+</div>
+
+
+    <div class="header_links" *ngFor="let header of headers">
+     <h1  [ngClass]="{ 'vybecash': header.title === 'VybeCash' }">{{header.title}}</h1>
+     <p [ngClass]="{ 'vybecash': header.title === 'VybeCash' }">{{header.desc}}</p>
+    <div class="btn">
+         <button *ngFor="let item of header.btn; let i = index" [ngStyle]="{ 'background-color': header.btnColors[i] }">{{item}}
+
+         </button>
+    </div>
+    </div>
+    <div class="header_hero" *ngFor="let header of headers"
+    [ngClass]="{
+      'optiva': header.title === 'Optiva',
+      'vybecash': header.title === 'VybeCash',
+      'default-padding': header.title !== 'Optiva' && header.title !== 'VybeCash',
+      'mobile-padding': isMobile
+    }"
+    >
+        <img [src]="header.bg" class="brand_color"
+        >
+        <img [src]="header.img" class="brand_image">
+    </div>
+   
+  
+  </div>

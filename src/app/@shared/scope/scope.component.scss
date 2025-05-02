@@ -1,0 +1,98 @@
+.scope_container {
+  width: 100%;
+  background-color: #005ede;
+  padding: 7.8125rem 9.125rem 9.5rem;
+  color: #f4f4f4;
+  margin: 0;
+
+  &.afrexim {
+    
+    background-color: #0e0e0e;
+    
+  }
+
+  .scopes {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    .sidebar {
+      width: 100%;
+      h5 {
+        font-weight: 700;
+        font-size: 1.25rem;
+        line-height: 2.25rem;
+
+        &.afrexim_text{
+          color: #81808F;
+        }
+      }
+    }
+    .main {
+      display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+        text-align: justify;
+      .main_scope {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+      h3 {
+        font-weight: 700;
+        font-size: 2.5rem;
+        line-height: 3.75rem;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+
+        span{
+          font-size: 1rem;
+          line-height: 1.25rem;
+          border-radius: 0.25rem;
+          margin: auto 1.25rem;
+          background-color: #FEE6FA;
+          padding: 0.25rem 0.625rem;
+          color: black;
+        }
+      }
+      .main p {
+        font-weight: 400;
+        font-size: 1.125rem;
+        line-height: 2rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .scope_container {
+    padding: 1rem;
+
+    .scopes {
+      flex-direction: column;
+      justify-content: center;
+
+      .sidebar {
+        width: 100%;
+      }
+
+      .main {
+        padding: 0rem;
+        width: 100%;
+
+        h3 {
+          font-size: 1.5rem;
+        }
+        p {
+          font-size: 1rem;
+          font-weight: 200;
+        }
+        .main_scope {
+          padding: 0rem;
+        }
+      }
+    }
+  }
+}

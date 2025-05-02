@@ -1,0 +1,20 @@
+<div class="blog_container">
+    <div class="header">
+        <h1>Recent Blogs</h1>
+        <a href="https://medium.com/@reventsocial" aria-label="medium">
+            <img src="assets/icons/redirect.svg" alt="">
+        </a>
+    </div>
+    <div class="blogs" >
+        <div class="blog" *ngFor="let blog of blogs">
+            <img [src]="blog.img" alt="blog-img">
+            <h2>{{blog.title}}</h2>
+            <p>{{blog.desc}}</p>
+            <div class="read_button">
+                <button>READ ARTICLE</button>
+                <lucide-icon name="move-right" [size]="34" [strokeWidth]="1.2"></lucide-icon>
+            </div>
+
+        </div>
+    </div>
+</div>

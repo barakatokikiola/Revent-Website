@@ -1,0 +1,116 @@
+.scope_container {
+  background-color: #011b69;
+  padding: 7.8125rem 9.125rem 9.25rem;
+  color: white;
+
+  .scopes {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    .sidebar {
+     width: 100%;
+
+      h5 {
+        font-weight: 700;
+        font-size: 1.25rem;
+        line-height: 2.25rem;
+      }
+    }
+    .main {
+      width: 100%;
+
+      .main_scope {
+        h3 {
+          font-weight: 700;
+          font-size: 2.5rem;
+          line-height: 3.75rem;
+          margin: 0;
+          margin-bottom: 1rem;
+        }
+        p {
+          font-weight: 400;
+          font-size: 1.125rem;
+          line-height: 2rem;
+          margin: 0;
+        }
+
+        .blur_bg {
+            margin-top: 2.5rem;
+          background-color: #435a9c;
+          border-radius: 0.625rem;
+          padding: 2.5rem 1.40625rem 4.1875rem;
+          
+
+          .btn_container {
+            display: flex;
+            gap: 1.375rem;
+            justify-content: space-evenly;
+
+            .item {
+              display: flex;
+              flex-direction: column;
+             gap: 1.125rem;
+
+              button {
+                width: 11.625rem;
+                height: 4.0625rem;
+                background-color: #f8f5fd;
+                color: #000;
+                font-weight: 400;
+                border-radius: 0.625rem;
+                font-size: 1.125rem;
+                line-height: 2rem;
+                padding: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .scope_container {
+    padding: 1rem;
+
+    .scopes {
+      flex-direction: column;
+      justify-content: center;
+
+      .sidebar {
+        width: 100%;
+      }
+      .main {
+        padding: 0rem;
+        width: 100%;
+        .main_scope {
+          padding: 0rem;
+
+          h3 {
+            font-size: 1rem;
+          }
+          p {
+            font-size: small;
+            font-weight: 200;
+          }
+          .blur_bg {
+            .btn_container {
+              flex-wrap: wrap;
+              gap: 10px;
+
+              .item {
+                gap: 10px;
+
+                button {
+                  padding: 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

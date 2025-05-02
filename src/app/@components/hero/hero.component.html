@@ -1,0 +1,41 @@
+<div class="hero_container">
+  <div class="nav_container">
+ <app-navbar [data]="navbar" linkColor="black"></app-navbar>
+  </div>
+
+<div class="hero">
+   
+    <div class="hero_text lg:ml-[9rem] md:ml-[2rem] lg:gap-[3.635rem] gap-[1.5rem]">
+        <div class="hero_title md:mr-[-3.5rem] z-[2]">
+            <h1 class="lg:text-[5.5rem]/[7rem]  md:text-[3.2rem]/[4rem]">You think it,
+                <br><span class="colored_text">We build it</span>
+            </h1>
+            <p class="lg:text-[1.125rem]/[2rem] lg:mb-[3.625rem] md:mb-[1rem]">Get help you at every stage of your product development lifecycle. Conquer the market with a truly invested software technology team by your side.</p>
+            
+            <button class="btn" >
+              <span class="lg:text-[1.25rem]/[2.25rem] text-[1rem]"> Let's talk</span>
+               <lucide-icon
+               name="arrow-right"
+               [size]="24"
+               [strokeWidth]="2"
+             ></lucide-icon>
+             </button>
+        </div>
+    <div class="explore">
+        <a class="explore_link lg:text-[1.25rem]/[2.25rem] text-[1rem] " href="">Explore all service 
+           <img src="assets/icons/arrow.svg" alt="">
+        </a>
+    </div>
+    </div>
+
+    
+
+    <div class="hero_img">
+        <picture>
+            <source srcset="assets/pic1.webp" type="image/webp">
+            <source srcset="assets/pic.jpg" type="image/png">
+            <img src="assets/pic.jpg" alt="Hero img">
+          </picture>
+    </div>
+</div>
+</div>
