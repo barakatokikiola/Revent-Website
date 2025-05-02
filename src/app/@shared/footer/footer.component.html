@@ -2,7 +2,7 @@
   <div class="idea">
     <img src="assets/ReventPattern.svg" alt="" loading="lazy" />
     <div class="description">
-      <h2>Got an idea?</h2>
+      <h1>Got an idea?</h1>
       <p>Let's bring it to life with our expert technology service.</p>
       <div class="btn_container">
         <app-button text="Tell us about it" [isIdea]="true"></app-button>
@@ -12,16 +12,16 @@
 
   <div class="footer">
     <div class="logo">
-      <img src="assets/logos/footer_logo.svg" />
+      <img src="assets/logos/footer_logo.svg" alt="footer-logo" />
     </div>
     <div class="footer_links">
       <div class="others">
         <div class="footer_list" *ngFor="let item of footer">
-          <h4>{{ item.title }}</h4>
+          <h2>{{ item.title }}</h2>
   
           <p *ngFor="let point of item.point">{{ point }}</p>
           <div class="icons">
-              <img *ngFor="let icon of item.icon" src="{{ icon }}">
+              <img alt="socials" *ngFor="let icon of item.icon" src="{{ icon }}">
           </div>
         </div>
       </div>
