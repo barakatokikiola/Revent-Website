@@ -19,8 +19,6 @@
   }
   .trustee {
     display: flex;
-    justify-content: space-between;
-    gap: 5rem;
     position: relative;
     overflow: hidden;
     padding: 4.75rem 0 6.22rem;
@@ -28,10 +26,12 @@
 
     .trustee_track {
       display: flex;
+      justify-content: space-between;
       white-space: nowrap;
       gap: 5rem;
-      min-width: 90%;
+      min-width: 100%;
       animation: scroll-left 20s linear infinite;
+      padding-right: 5rem;
 
       img {
         width: auto;
@@ -65,7 +65,7 @@
       .trustee_track {
         flex-shrink: 0;
         min-width: 100%;
-        gap: 2rem;
+        padding-right: 2rem;
       }
     }
   }

@@ -2,6 +2,7 @@
   position: relative;
   margin: 0;
   padding: 0;
+  background-color: #04001f;
   color: #fff;
 
   .bg_container {
@@ -9,34 +10,19 @@
     align-items: center;
     justify-content: center;
     background-color: #04001f;
-    width: 100vw;
-    margin: 0;
-    padding: 0;
-
-    .bg {
-      width: 100%;
-      height: 100%;
-      opacity: 0.5;
-      margin: 0;
-      padding: 0;
-    }
-
-    .frame {
-      display: flex;
-      position: absolute;
-      width: inherit;
-      height: auto;
-      margin: 0;
-      padding: 0;
-    }
+    width: 100%;
+    height: auto;
+    background-image: url("/assets/bg/Frame.png"),url("/assets/bg/image.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
   }
 
   .client {
     .client_header {
-      position: absolute;
-      top: 0;
-      width: 100vw;
-      padding: 6.625rem 21.875rem 4.375rem;
+      max-width: 45.9375rem;
+      margin: 0 auto;
+      padding-top: 6.625rem;
+      padding-bottom: 4.375rem;
       text-align: center;
 
       h1 {
@@ -58,10 +44,9 @@
     }
 
     .client_testimonial {
-      position: absolute;
-      top: 20rem;
-      width: 100vw;
-      padding: 0 15.03125rem 0 15.03125rem;
+      max-width: 59.625rem;
+      margin: 0 2rem;
+      margin-bottom: 3.625rem;
 
       .testimonial {
         display: flex;
@@ -129,17 +114,12 @@
 @media only screen and (max-width: 768px) {
   .testimonial_container {
     
-    .bg_container {
-      display: none;
-    }
-
+    .bg_container{
+      background-size: cover;
     .client {
-        width: 100%;
+       
         .client_header {
-          position: unset;
-          width: 100%;
-          padding: 2rem 1rem;
-          color: #04001f;
+         
     
           h1 {
             font-size: 1.125rem;
@@ -154,9 +134,7 @@
         }
     
         .client_testimonial {
-            position: unset;
-            top: 0;
-            padding: 0;
+           
     
           .testimonial {
             padding: 2rem 1rem 0;
@@ -208,4 +186,4 @@
         }
       }
 }
-}
+}}

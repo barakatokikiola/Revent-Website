@@ -1,6 +1,5 @@
 <div class="footer_container">
   <div class="idea">
-    <img src="assets/ReventPattern.svg" alt="" loading="lazy" />
     <div class="description">
       <h1>Got an idea?</h1>
       <p>Let's bring it to life with our expert technology service.</p>
@@ -15,13 +14,13 @@
       <img src="assets/logos/footer_logo.svg" alt="footer-logo" />
     </div>
     <div class="footer_links">
-      <div class="others">
+      <div class="others px-[2rem] mx-auto">
         <div class="footer_list" *ngFor="let item of footer">
           <h2>{{ item.title }}</h2>
   
           <p *ngFor="let point of item.point">{{ point }}</p>
           <div class="icons">
-              <img alt="socials" *ngFor="let icon of item.icon" src="{{ icon }}">
+              <img *ngFor="let icon of item.icon" src="{{ icon }}">
           </div>
         </div>
       </div>
